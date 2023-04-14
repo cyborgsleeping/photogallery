@@ -1,0 +1,120 @@
+html {background-color:black;}
+
+
+body {
+    margin:0 auto;
+    width:485px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    header {background-color:white;
+    color:#007d7b;
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:30px;
+    }
+
+    
+   h1, h2 {text-transform:uppercase;}
+
+   h1 {font-size:2em;}
+
+   h2 {font-size:2em;}
+
+p {font-size:1.25em;}
+
+nav {background-color:black;
+text-transform:uppercase;
+text-align:center;
+}
+
+nav li {display:inline-flex;}
+
+nav a {font-size: 1.5em;}
+
+li a {color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav h2 {visibility:hidden;
+height:0px;
+}
+
+[href="#top"] {position:fixed;
+bottom:0px;
+right:0px;
+border-radius: 5px;
+}
+
+footer {
+    text-align:center;
+    color:white;}
+
+figure {margin:5px;}
+
+figcaption {
+position:relative;
+text-align:center;
+bottom:280px;
+margin:0;
+padding-top:10px;
+text-transform:uppercase;
+font-weight:bold;
+}
+
+
+    figcaption, label, input, small {font-size:1em;}
+
+    .bottom {bottom:50px;}
+
+    .white {color:white;}
+
+    .top {bottom:625px;}
+
+#about {
+    background-color:white;
+    padding:5px;}
+
+#gallery {background-color:white;
+    padding:5px;}
+
+#photos {display:grid;
+grid-template-columns: 1fr;
+}
+
+#contact {color:white;
+}
+
+
+input[type=submit] {
+    text-align:center;
+    color:white;
+    background-color:#007d7b;
+
+}
+
+@media screen and (min-width:880px) {
+body {width:880px;
+}
+
+nav {display:flex;
+    justify-content:center;}
+
+#photos {
+grid-template-columns: 1fr 1fr;
+}
+    
+}
+
+@media screen and (min-width:1300px) {
+body {width:1300px;
+}
+nav {
+    
+    justify-content:right;}
+
+#photos {
+
+    grid-template-columns:1fr 1fr 1fr;}
+}
